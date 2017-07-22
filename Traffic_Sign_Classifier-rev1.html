@@ -11820,7 +11820,7 @@ div#notebook {
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>dcwipphhgc001.edc.nam.gm.com
+<pre>localhost
 </pre>
 </div>
 </div>
@@ -11838,9 +11838,9 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">pickle</span>
 
 <span class="c1"># TODO: Fill this in based on where you saved the training and testing data</span>
-<span class="n">training_file</span> <span class="o">=</span> <span class="s2">&quot;/home/qz40qq/trafficSignData/train.p&quot;</span>
-<span class="n">validation_file</span><span class="o">=</span> <span class="s2">&quot;/home/qz40qq/trafficSignData/valid.p&quot;</span>
-<span class="n">testing_file</span> <span class="o">=</span>  <span class="s2">&quot;/home/qz40qq/trafficSignData/test.p&quot;</span>
+<span class="n">training_file</span> <span class="o">=</span> <span class="s2">&quot;/home/user/trafficSignData/train.p&quot;</span>
+<span class="n">validation_file</span><span class="o">=</span> <span class="s2">&quot;/home/user/trafficSignData/valid.p&quot;</span>
+<span class="n">testing_file</span> <span class="o">=</span>  <span class="s2">&quot;/home/user/trafficSignData/test.p&quot;</span>
 
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">training_file</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">train</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
@@ -14546,9 +14546,9 @@ Speed limit (80km/h)
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/qz40qq/miniconda2/envs/experiments/lib/python3.5/site-packages/skimage/exposure/exposure.py:63: UserWarning: This might be a color image. The histogram will be computed on the flattened image. You can instead apply this function to each color channel.
+<pre>/home/user/miniconda2/envs/experiments/lib/python3.5/site-packages/skimage/exposure/exposure.py:63: UserWarning: This might be a color image. The histogram will be computed on the flattened image. You can instead apply this function to each color channel.
   warn(&#34;This might be a color image. The histogram will be &#34;
-/home/qz40qq/miniconda2/envs/experiments/lib/python3.5/site-packages/skimage/util/dtype.py:110: UserWarning: Possible precision loss when converting from float64 to uint16
+/home/user/miniconda2/envs/experiments/lib/python3.5/site-packages/skimage/util/dtype.py:110: UserWarning: Possible precision loss when converting from float64 to uint16
   &#34;%s to %s&#34; % (dtypeobj_in, dtypeobj))
 </pre>
 </div>
@@ -15894,7 +15894,7 @@ sJFhGAcbGYZx/h9ZXA/GFD2YLQAAAABJRU5ErkJggg==
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>  0%|          | 0/34799 [00:00&lt;?, ?it/s]/home/qz40qq/miniconda2/envs/experiments/lib/python3.5/site-packages/skimage/exposure/exposure.py:63: UserWarning: This might be a color image. The histogram will be computed on the flattened image. You can instead apply this function to each color channel.
+<pre>  0%|          | 0/34799 [00:00&lt;?, ?it/s]/home/user/miniconda2/envs/experiments/lib/python3.5/site-packages/skimage/exposure/exposure.py:63: UserWarning: This might be a color image. The histogram will be computed on the flattened image. You can instead apply this function to each color channel.
   warn(&#34;This might be a color image. The histogram will be &#34;
   2%|▏         | 571/34799 [00:00&lt;00:06, 5701.58it/s]</pre>
 </div>
@@ -15963,7 +15963,7 @@ Size of labels 12630
 <p><strong>Answer:</strong></p>
 <p>I am normalizing the images using equalization of histograms based on my experiments and the comments described on the image processing section above. I've experimented with a few different methods before and it provided the best results and trade-of for performance as well.</p>
 <p>I've also splitted the training set to generate a validation set from here. In fact, this took me a long time to realize that I was missing given that I was assuming that the dataset provided [1] for validation was good enough, but I'd need to also do the same kind of normalization there as well.</p>
-<p>[1] validation_file= "/home/qz40qq/trafficSignData/valid.p"</p>
+<p>[1] validation_file= "/home/user/trafficSignData/valid.p"</p>
 
 </div>
 </div>
